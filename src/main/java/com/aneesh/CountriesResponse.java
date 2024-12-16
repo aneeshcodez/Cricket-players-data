@@ -7,13 +7,13 @@ import java.util.List;
 
 public class CountriesResponse {
     @JsonProperty("data")
-    private List<Countrypojo> data;
+    private List<CountryDto> data;
 
-    public List<Countrypojo> getData() {
+    public List<CountryDto> getData() {
         return data;
     }
 
-    public void setData(List<Countrypojo> data) {
+    public void setData(List<CountryDto> data) {
         this.data = data;
     }
 }

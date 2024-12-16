@@ -8,13 +8,13 @@ import java.util.List;
 
 public class PlayersResponse {
     @JsonProperty("data")
-    private List<Playerpojo> data;
+    private List<PlayerDto> data;
 
-    public List<Playerpojo> getData() {
+    public List<PlayerDto> getData() {
         return data;
     }
 
-    public void setData(List<Playerpojo> data) {
+    public void setData(List<PlayerDto> data) {
         this.data = data;
     }
 }

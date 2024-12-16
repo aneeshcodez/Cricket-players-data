@@ -3,11 +3,11 @@ package com.aneesh;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Countrypojo {
+public class ContinentDto {
     private int id;
     private String name;
 
-    // Getters and Setters
+    // Getters and setters for each field
     public int getId() {
         return id;
     }
@@ -24,4 +24,3 @@ public class Countrypojo {
         this.name = name;
     }
 }
-

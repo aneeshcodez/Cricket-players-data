@@ -3,7 +3,7 @@ package com.aneesh;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Playerpojo {
+public class PlayerDto {
 
     private String fullname;
 

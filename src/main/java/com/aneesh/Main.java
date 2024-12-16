@@ -31,7 +31,7 @@ public class Main {
 
         // Display continents
         System.out.println("Here's the list of continents you can explore:");
-        List<Continentpojo> continents = continentsresponse.getContinents();
+        List<ContinentDto> continents = continentsresponse.getContinents();
         for (int i = 0; i < continents.size(); i++) {
             System.out.println((i + 1) + ". " + continents.get(i).getName());
         }
@@ -58,8 +58,8 @@ public class Main {
     private static void displayCountries(CountriesResponse countriesResponse){
         System.out.println("Here's the list of countries");
         for (int i = 0; i < countriesResponse.getData().size(); i++) {
-            Countrypojo countrypojo = countriesResponse.getData().get(i);
-            System.out.println(countrypojo.getId() + ". " + countrypojo.getName());
+            CountryDto countryDto = countriesResponse.getData().get(i);
+            System.out.println(countryDto.getId() + ". " + countryDto.getName());
         }
     }
 
@@ -83,8 +83,8 @@ public class Main {
 
     private static void displayPlayers(PlayersResponse playersResponse) {
         System.out.println("Players for the selected country:");
-        for (Playerpojo playerpojo : playersResponse.getData()) {
-            System.out.println(playerpojo.getFullname());
+        for (PlayerDto playerDto : playersResponse.getData()) {
+            System.out.println(playerDto.getFullname());
         }
     }
 

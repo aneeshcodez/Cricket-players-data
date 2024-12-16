@@ -8,13 +8,13 @@ import java.util.List;
 
 public class Continentsresponse {
     @JsonProperty("data")
-    private List<Continentpojo> continents;
+    private List<ContinentDto> continents;
 
-    public List<Continentpojo> getContinents() {
+    public List<ContinentDto> getContinents() {
         return continents;
     }
 
-    public void setContinents(List<Continentpojo> continents) {
+    public void setContinents(List<ContinentDto> continents) {
         this.continents = continents;
     }
 }
