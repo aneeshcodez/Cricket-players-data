@@ -1,13 +1,13 @@
-package com.aneesh;
+package com.aneesh.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CountryDto {
+public class ContinentDto {
     private int id;
     private String name;
 
-    // Getters and Setters
+    // Getters and setters for each field
     public int getId() {
         return id;
     }
@@ -24,4 +24,3 @@ public class CountryDto {
         this.name = name;
     }
 }
-

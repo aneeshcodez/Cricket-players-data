@@ -1,4 +1,4 @@
-package com.aneesh;
+package com.aneesh.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
