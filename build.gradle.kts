@@ -1,5 +1,7 @@
 plugins {
     id("java")
+    // Apply the application plugin to add support for building a CLI application in Java.
+    application
 }
 
 group = "org.example"
@@ -21,10 +23,17 @@ dependencies {
 
 
 
+}
 
 
+application {
+    // Define the main class for the application.
+    mainClass.set("com.aneesh.Main")
+}
 
-
+tasks.named<JavaExec>("run") {
+//    Connect the System.in of the gradle build with the System.in of the run task
+    standardInput = System.`in`
 }
 
 tasks.test {
